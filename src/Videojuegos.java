@@ -1,11 +1,46 @@
 public class Videojuegos {
     // Atributos public
-    public String nombre;
-    public String genero;
+    private String nombre;
+    private String genero;
 
     // Atributos con acceso por defecto
-    String version;
-    boolean activo;
+    private String version;
+    private boolean activo;
+
+    // Getters y Setters
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setVersion(String version) {
+        this.version = version;
+    }
+
+    public String getVersion() {
+        return version;
+    }
+
+    public void setActivo(boolean activo) {
+        this.activo = activo;
+    }
+
+    public boolean isActivo() {
+        return activo;
+    }
+
 
     public void mostrarInformacion() {
         System.out.println("Videojuego: " + nombre + " Género: " + genero + " Versión: " + version + " Activo: " + activo);
